@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SnakeLite</title>
+    <link rel='stylesheet' type='text/css' href='./styles.css' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <aside id='directions-overlay' class='show'>
+      <div class='directions'>
+        <h1 class='title'>SnakeLite</h1>
+        <div class='directions-controls'>
+          <p>
+            <span class='control arrow'>&larr;</span>
+            <span class='control arrow'>&rarr;</span>
+            <span class='control arrow'>&darr;</span>
+            <span class='control arrow'>&uarr;</span>
+            - Direction of snake
+          <p>
+            <span class='control'>Space</span> - Pause
+          </p>
+        </div>
+        <button id='start' autofocus="1">Start!</button>
+      </div>
+    </aside>
+    <canvas id='snake' width='500px' height='500px'></canvas>
+    <script type='text/javascript' src='./bundle.js'></script>
+  </body>
+</html>
