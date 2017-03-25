@@ -49,6 +49,3 @@ Sadly, this is an exact replica of the snake game. Here are some issues I have w
 5. General app structure. This app would have been awesome to build in React + Redux but since I really didn't want to use any of my time setting all the actions, reducers, and components I decided to go with the structure I have here.
 6. The food pellets are randomly placed without caring about landing right on top of the snake's body. In all the games I've "tested" I have yet to see this happen, but it is definitely possible.
 7. There is one known bug right now that occurs when the user inputs 2 arrow commands before the `draw` cycle occurs. The first arrow can be in any direction but the second arrow needs to be in the exact opposite direction that the snake is traveling. This occurs because the `dx` and `dy` values get set immediately and not when the `draw` cycle actually executes. This can be fixed by simply waiting to update those values until `draw` executes.
-
-# Thanks!
-This was an incredibly enjoyable take-home assignment. I truly wish more companies did exercises like this. Thank you so much for your time and consideration!
